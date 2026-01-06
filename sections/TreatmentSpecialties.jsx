@@ -14,6 +14,9 @@ import {
   Baby,
   Activity,
   Stethoscope,
+  Cpu,
+  Layers,
+  Scissors,
 } from "lucide-react";
 
 const specialties = [
@@ -47,6 +50,21 @@ const specialties = [
     title: "General & Specialized Surgery",
     desc: "Minimally invasive and advanced surgical procedures.",
   },
+  {
+    icon: Cpu,
+    title: "Robotic Surgery",
+    desc: "Precision-assisted robotic procedures for faster recovery and reduced risk.",
+  },
+  {
+    icon: Layers,
+    title: "Organ Transplantation",
+    desc: "Liver, kidney, and other organ transplants with comprehensive care.",
+  },
+  {
+    icon: Scissors,
+    title: "Plastic & Reconstructive Surgery",
+    desc: "Cosmetic and reconstructive procedures with natural, safe outcomes.",
+  },
 ];
 
 export default function TreatmentSpecialties() {
@@ -57,7 +75,6 @@ export default function TreatmentSpecialties() {
     offset: ["start end", "end start"],
   });
 
-  // Parallax movement for background
   const bgY = useTransform(scrollYProgress, [0, 1], ["-6%", "6%"]);
 
   return (
@@ -116,16 +133,18 @@ export default function TreatmentSpecialties() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
                 className="
-                  bg-white
-                  border border-slate-200
+                  bg-white/35
+                  backdrop-blur-xl
+                  border border-white/40
                   rounded-2xl
                   p-6
-                  shadow-sm
-                  hover:shadow-lg
+                  shadow-lg shadow-black/5
+                  hover:shadow-xl
+                  hover:-translate-y-1
                   transition-all
                 "
               >
-                <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-xl bg-teal-500/15 flex items-center justify-center mb-4">
                   <Icon className="w-6 h-6 text-teal-600" />
                 </div>
 
@@ -133,7 +152,7 @@ export default function TreatmentSpecialties() {
                   {item.title}
                 </h3>
 
-                <p className="mt-2 text-sm text-slate-600">
+                <p className="mt-2 text-sm text-slate-700">
                   {item.desc}
                 </p>
               </motion.div>

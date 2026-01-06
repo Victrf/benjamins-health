@@ -24,7 +24,20 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden">
-      {/* PAGE LOAD SLIDE-IN */}
+      {/* ================= MOBILE BACKGROUND IMAGE ================= */}
+      <div className="absolute inset-0 md:hidden">
+        <Image
+          src={images[index]}
+          alt="Healthcare in India"
+          fill
+          priority
+          className="object-cover"
+        />
+        {/* cinematic gradient overlay (NO BLUR) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/75 via-white/55 to-white/75" />
+      </div>
+
+      {/* ================= PAGE LOAD SLIDE-IN ================= */}
       <motion.div
         initial={{ x: 120, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -33,15 +46,18 @@ export default function Hero() {
           ease: [0.22, 1, 0.36, 1],
         }}
       >
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 sm:py-28 lg:py-32">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-24 sm:py-28 lg:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-16 items-center">
-            {/* LEFT CONTENT */}
+            {/* ================= LEFT CONTENT ================= */}
             <div className="max-w-3xl text-center lg:text-left mx-auto lg:mx-0">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900 leading-tight">
                 Connecting Patients to
-                <span className="text-teal-600"> World-Class Healthcare</span>
-                <br className="hidden sm:block" />
-                in India
+                <span className="text-teal-600 block sm:inline">
+                  {" "}
+                  World-Class Healthcare
+                </span>
+                <span className="block sm:hidden">in India</span>
+                <span className="hidden sm:block"> in India</span>
               </h1>
 
               <p className="mt-5 sm:mt-6 text-base sm:text-lg text-slate-600 leading-relaxed">
@@ -68,8 +84,8 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* RIGHT — IMAGE (HIDDEN ON SMALL SCREENS) */}
-            <div className="relative hidden md:block w-full h-[360px] lg:h-[420px]">
+            {/* ================= DESKTOP CINEMATIC IMAGE ================= */}
+            <div className="relative hidden md:block w-full h-[360px] lg:h-[420px] z-10">
               <AnimatePresence mode="wait">
                 {/* Bottom Triangle */}
                 <motion.div
@@ -87,8 +103,8 @@ export default function Hero() {
                     src={images[index]}
                     alt="Healthcare in India"
                     fill
-                    className="object-cover"
                     priority
+                    className="object-cover"
                   />
                 </motion.div>
 

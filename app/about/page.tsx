@@ -21,7 +21,7 @@ export default function AboutPage() {
       <AboutHero />
       <MissionVision />
       <TreatmentSpecialties />
-      <HospitalNetwork />
+     
       <EthicsTransparency />
       <WhyPatientsTrustUs />
       <FounderSection />

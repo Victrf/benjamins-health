@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
+import FloatingContact from "@/components/FloatingContact";
+
 import Footer from "@/components/Footer";
 
 const inter = Inter({
@@ -24,6 +26,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
+        <FloatingContact />
         <Footer />
       </body>
     </html>

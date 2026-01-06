@@ -45,3 +45,176 @@ body {
       8% 100%,
       0% 50%);
 }
+
+
+
+
+
+
+
+
+
+/* ===== Swiper Custom Navigation (Green by default) ===== */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #14b8a6;
+  /* teal-500 icon */
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+
+  /* Glassy green background */
+  background: rgba(20, 184, 166, 0.18);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(20, 184, 166, 0.45);
+  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Arrow icon size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Hover — stronger green glow */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(20, 184, 166, 0.32);
+  box-shadow: 0 14px 40px rgba(20, 184, 166, 0.45);
+  transform: scale(1.1);
+}
+
+/* Subtle floating animation (cinematic) */
+.swiper-button-next,
+.swiper-button-prev {
+  animation: arrowFloat 3.5s ease-in-out infinite;
+}
+
+@keyframes arrowFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Optional: hide arrows on very small screens */
+@media (max-width: 640px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+:root {
+  --swiper-navigation-color: #14b8a6;
+}
+
+/* Swiper arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+
+  background: rgba(20, 184, 166, 0.18);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(20, 184, 166, 0.45);
+  box-shadow: 0 8px 24px rgba(20, 184, 166, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  animation: arrowFloat 3.5s ease-in-out infinite;
+}
+
+/* Arrow icon size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Hover */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(20, 184, 166, 0.32);
+  box-shadow: 0 14px 40px rgba(20, 184, 166, 0.45);
+  transform: scale(1.1);
+}
+
+/* Floating animation */
+@keyframes arrowFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------- Swiper Navigation Arrows ---------- */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #16a34a;
+  /* green */
+  width: 44px;
+  height: 44px;
+}
+
+/* Arrow icon size (desktop default) */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ---------- Mobile (small screens) ---------- */
+@media (max-width: 640px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 32px;
+    height: 32px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 14px;
+  }
+}

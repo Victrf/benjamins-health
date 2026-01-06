@@ -108,7 +108,7 @@ export default function TrustSnapshot() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-2xl mb-14"
         >
           <h2 className="text-3xl sm:text-4xl font-semibold text-slate-900">
@@ -187,7 +187,7 @@ export default function TrustSnapshot() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="grid lg:grid-cols-2 gap-12"
         >
           {/* OUR SERVICES */}
