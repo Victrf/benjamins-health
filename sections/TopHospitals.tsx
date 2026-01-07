@@ -26,12 +26,12 @@ const slides = [
     website: "https://www.manipalhospitals.com",
     variant: "simple",
   },
-  {
-    name: "Apollo Hospitals, Bangalore",
-    video: "/hospitals/apo.mp4",
-    website: "https://www.apollohospitals.com",
-    variant: "video",
-  },
+ {
+  name: "Apollo Hospitals, Bangalore",
+  video: "https://res.cloudinary.com/dtpqq0qcp/video/upload/f_auto,q_auto,w_1280/v1767794489/apo.web_mvc8cy.mp4",
+  website: "https://www.apollohospitals.com",
+  variant: "video",
+}
 ];
 
 export default function TopHospitalsCarousel() {

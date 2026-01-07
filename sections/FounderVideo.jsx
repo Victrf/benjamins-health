@@ -109,7 +109,7 @@ export default function FounderVideo() {
               poster="/founder/video-poster.jpg"
             >
               <source
-                src="/founder/founder-message.mp4"
+                src="https://res.cloudinary.com/dtpqq0qcp/video/upload/f_auto,q_auto,w_1280/v1767796044/founder-message.web_zaqlqu.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.

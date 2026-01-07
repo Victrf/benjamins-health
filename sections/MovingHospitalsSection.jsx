@@ -6,14 +6,14 @@ import Image from "next/image";
 
 const rowOne = [
   { type: "image", src: "/media/patient.webp" },
-  { type: "video", src: "/media/care-video-1.mp4" },
+  { type: "video", src: "https://res.cloudinary.com/dtpqq0qcp/video/upload/f_auto,q_auto,w_1280/v1767794638/care-video-1.web_rjgni9.mp4" },
   { type: "image", src: "/media/hospital.webp" },
-  { type: "video", src: "/media/facility-video.mp4" },
+  { type: "video", src: "https://res.cloudinary.com/dtpqq0qcp/video/upload/f_auto,q_auto,w_1280/v1767794708/facility-video.web_mv4rqa.mp4" },
 ];
 
 const rowTwo = [
   { type: "image", src: "/media/patient.webp" },
-  { type: "video", src: "/media/surgery-video-2.mp4" },
+  { type: "video", src: "https://res.cloudinary.com/dtpqq0qcp/video/upload/f_auto,q_auto,w_1280/v1767794726/surgery-video-2.web_nencqa.mp4" },
   { type: "image", src: "/media/hospital.webp" },
   { type: "image", src: "/media/patients.webp" },
 ];
