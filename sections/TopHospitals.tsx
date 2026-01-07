@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 const slides = [
   {
     name: "Fortis Hospital, Bangalore",
-    image: "/hospitals/apolloo.webp",
+    image: "/hospitals/apollo.webp",
     description:
       "A leading multi-specialty hospital known for advanced treatments, international standards, and patient-centered care.",
     website: "https://www.fortishealthcare.com",
