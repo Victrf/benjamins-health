@@ -5,19 +5,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const images = [
-  "/hero/hospital-1.jpg",
-  "/hero/hospital-2.jpg",
-  "/hero/doctor-1.jpg",
-  "/hero/patient-care.jpg",
+const HERO_IMAGES = [
+  "/hero/hospital.webp",
+  "/hero/hospitals.webp",
+  "/hero/doctor.webp",
+  "/hero/patient.webp",
 ];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
 
+  const currentImage = HERO_IMAGES[index];
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % images.length);
+      setIndex((prev) => (prev + 1) % HERO_IMAGES.length);
     }, 4500);
     return () => clearInterval(interval);
   }, []);
@@ -27,13 +29,12 @@ export default function Hero() {
       {/* ================= MOBILE BACKGROUND IMAGE ================= */}
       <div className="absolute inset-0 md:hidden">
         <Image
-          src={images[index]}
+          src={currentImage}
           alt="Healthcare in India"
           fill
           priority
           className="object-cover"
         />
-        {/* cinematic gradient overlay (NO BLUR) */}
         <div className="absolute inset-0 bg-gradient-to-b from-white/75 via-white/55 to-white/75" />
       </div>
 
@@ -100,7 +101,7 @@ export default function Hero() {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    src={images[index]}
+                    src={currentImage}
                     alt="Healthcare in India"
                     fill
                     priority
@@ -108,10 +109,10 @@ export default function Hero() {
                   />
                 </motion.div>
 
-                {/* Top Triangle */}
+                {/* Top Triangle (Toggle Layer) — SAME IMAGE */}
                 <motion.div
                   key={`top-${index}`}
-                  className="absolute inset-0 overflow-hidden bg-white/10 backdrop-blur-[2px]"
+                  className="absolute inset-0 overflow-hidden bg-white/10"
                   style={{
                     clipPath: "polygon(0% 0%, 100% 0%, 0% 100%)",
                     transform: "translate(-10px, -10px)",
@@ -124,7 +125,7 @@ export default function Hero() {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 >
                   <Image
-                    src={images[index]}
+                    src={currentImage}
                     alt="Healthcare detail"
                     fill
                     className="object-cover"

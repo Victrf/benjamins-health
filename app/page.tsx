@@ -5,6 +5,7 @@ import HowItWorks from "@/sections/HowItWorks";
 import PrimaryCTA from "@/sections/PrimaryCTA";
 import TopHospitals from "@/sections/TopHospitals"; 
 import MovingHospitalsSection from "@/sections/MovingHospitalsSection";
+import Testimonies from "@/sections/Testimonies";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <TrustSnapshot />
       <WhyBangalorePreview />
       <HowItWorks />
+      <Testimonies />
       <PrimaryCTA />
     </>
   );

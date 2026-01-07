@@ -10,7 +10,7 @@ export default function PrimaryCTA() {
       {/* BACKGROUND IMAGE */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/bg/cta-medical.jpg"
+          src="/bg/cta.webp"
           alt="Healthcare consultation"
           fill
           className="object-cover"

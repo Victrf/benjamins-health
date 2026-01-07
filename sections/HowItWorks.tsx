@@ -65,7 +65,7 @@ export default function HowItWorks() {
         className="absolute inset-0 z-0"
       >
         <Image
-          src="/bg/how-it-works.jpg"
+          src="/bg/how.webp"
           alt="Medical journey background"
           fill
           className="object-cover"

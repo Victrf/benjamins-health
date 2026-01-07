@@ -61,7 +61,7 @@ export default function WhyBangalorePreview() {
         className="absolute inset-0 z-0"
       >
         <Image
-          src="/bg/bangalore-medical.jpg"
+          src="/bg/bangalore.webp"
           alt="Healthcare in Bangalore"
           fill
           className="object-cover"

@@ -5,17 +5,17 @@ import { useRef } from "react";
 import Image from "next/image";
 
 const rowOne = [
-  { type: "image", src: "/media/patient-1.jpg" },
+  { type: "image", src: "/media/patient.webp" },
   { type: "video", src: "/media/care-video-1.mp4" },
-  { type: "image", src: "/media/hospital-1.jpg" },
+  { type: "image", src: "/media/hospital.webp" },
   { type: "video", src: "/media/facility-video.mp4" },
 ];
 
 const rowTwo = [
-  { type: "image", src: "/media/patient-2.jpg" },
+  { type: "image", src: "/media/patient.webp" },
   { type: "video", src: "/media/surgery-video-2.mp4" },
-  { type: "image", src: "/media/hospital-2.jpg" },
-  { type: "image", src: "/media/patient-1.jpg" },
+  { type: "image", src: "/media/hospital.webp" },
+  { type: "image", src: "/media/patients.webp" },
 ];
 
 export default function MovingMediaSection() {
