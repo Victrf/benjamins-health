@@ -14,7 +14,7 @@ const rowOne = [
 const rowTwo = [
   { type: "image", src: "/media/patient.webp" },
   { type: "video", src: "https://res.cloudinary.com/dtpqq0qcp/video/upload/f_auto,q_auto,w_1280/v1767794726/surgery-video-2.web_nencqa.mp4" },
-  { type: "image", src: "/media/hospital.webp" },
+  { type: "image", src: "/media/hospital1.webp" },
   { type: "image", src: "/media/patients.webp" },
 ];
 
