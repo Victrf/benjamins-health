@@ -26,17 +26,18 @@ const slides = [
     website: "https://www.manipalhospitals.com",
     variant: "simple",
   },
- {
-  name: "Apollo Hospitals, Bangalore",
-  video: "https://res.cloudinary.com/dtpqq0qcp/video/upload/f_auto,q_auto,w_1280/v1767794489/apo.web_mvc8cy.mp4",
-  website: "https://www.apollohospitals.com",
-  variant: "video",
-}
+  {
+    name: "Apollo Hospitals, Bangalore",
+    video:
+      "https://res.cloudinary.com/dtpqq0qcp/video/upload/f_auto,q_auto,w_1280/v1767794489/apo.web_mvc8cy.mp4",
+    website: "https://www.apollohospitals.com",
+    variant: "video",
+  },
 ];
 
 export default function TopHospitalsCarousel() {
   return (
-    <section className="relative w-full h-[65vh] sm:h-[80vh] overflow-hidden">
+    <section className="relative w-full h-[50vh] sm:h-[80vh] overflow-hidden">
       <Swiper
         modules={[Autoplay, Navigation]}
         autoplay={{ delay: 4500, disableOnInteraction: false }}
@@ -77,18 +78,7 @@ export default function TopHospitalsCarousel() {
               {/* FORTIS */}
               {slide.variant === "full" && (
                 <div className="absolute inset-0 flex items-end sm:items-start">
-                  <div
-                    className="
-                      m-4 sm:m-10 lg:m-16
-                      max-w-md sm:max-w-xl
-                      rounded-2xl sm:rounded-3xl
-                      bg-white/15 backdrop-blur-xl
-                      border border-white/30
-                      p-5 sm:p-8
-                      shadow-2xl
-                      text-white
-                    "
-                  >
+                  <div className="m-4 sm:m-10 lg:m-16 max-w-md sm:max-w-xl rounded-2xl sm:rounded-3xl bg-white/15 backdrop-blur-xl border border-white/30 p-5 sm:p-8 shadow-2xl text-white">
                     <h2 className="text-xl sm:text-3xl font-semibold">
                       {slide.name}
                     </h2>
@@ -101,17 +91,7 @@ export default function TopHospitalsCarousel() {
                       <a
                         href={slide.brochure}
                         download
-                        className="
-                          inline-flex items-center justify-center gap-2
-                          rounded-full
-                          bg-white
-                          px-4 sm:px-5 py-2.5 sm:py-3
-                          text-slate-900
-                          text-sm sm:text-base
-                          font-medium
-                          hover:bg-slate-100
-                          transition
-                        "
+                        className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-4 sm:px-5 py-2.5 sm:py-3 text-slate-900 text-sm sm:text-base font-medium hover:bg-slate-100 transition"
                       >
                         <Download className="w-4 h-4" />
                         Download Brochure
@@ -120,16 +100,7 @@ export default function TopHospitalsCarousel() {
                       <a
                         href={slide.website}
                         target="_blank"
-                        className="
-                          inline-flex items-center justify-center gap-2
-                          rounded-full
-                          border border-white/40
-                          px-4 sm:px-5 py-2.5 sm:py-3
-                          text-sm sm:text-base
-                          text-white
-                          hover:bg-white/15
-                          transition
-                        "
+                        className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base text-white hover:bg-white/15 transition"
                       >
                         Visit Website
                         <ExternalLink className="w-4 h-4" />
@@ -142,18 +113,7 @@ export default function TopHospitalsCarousel() {
               {/* MANIPAL */}
               {slide.variant === "simple" && (
                 <div className="absolute inset-0 flex items-end sm:items-start">
-                  <div
-                    className="
-                      m-4 sm:m-10 lg:m-16
-                      max-w-sm sm:max-w-lg
-                      rounded-2xl sm:rounded-3xl
-                      bg-white/15 backdrop-blur-xl
-                      border border-white/30
-                      p-5 sm:p-8
-                      shadow-2xl
-                      text-white
-                    "
-                  >
+                  <div className="m-4 sm:m-10 lg:m-16 max-w-sm sm:max-w-lg rounded-2xl sm:rounded-3xl bg-white/15 backdrop-blur-xl border border-white/30 p-5 sm:p-8 shadow-2xl text-white">
                     <h2 className="text-xl sm:text-3xl font-semibold">
                       {slide.name}
                     </h2>
@@ -166,16 +126,7 @@ export default function TopHospitalsCarousel() {
                       <a
                         href={slide.website}
                         target="_blank"
-                        className="
-                          inline-flex items-center gap-2
-                          rounded-full
-                          border border-white/40
-                          px-5 py-2.5 sm:py-3
-                          text-sm sm:text-base
-                          text-white
-                          hover:bg-white/15
-                          transition
-                        "
+                        className="inline-flex items-center gap-2 rounded-full border border-white/40 px-5 py-2.5 sm:py-3 text-sm sm:text-base text-white hover:bg-white/15 transition"
                       >
                         Visit Website
                         <ExternalLink className="w-4 h-4" />
@@ -188,18 +139,7 @@ export default function TopHospitalsCarousel() {
               {/* APOLLO VIDEO */}
               {slide.variant === "video" && (
                 <div className="absolute inset-0 flex items-end sm:items-center">
-                  <div
-                    className="
-                      m-4 sm:m-10 lg:m-16
-                      max-w-sm sm:max-w-xl
-                      rounded-2xl sm:rounded-3xl
-                      bg-white/15 backdrop-blur-xl
-                      border border-white/30
-                      p-5 sm:p-8
-                      shadow-2xl
-                      text-white
-                    "
-                  >
+                  <div className="m-4 sm:m-10 lg:m-16 max-w-sm sm:max-w-xl rounded-2xl sm:rounded-3xl bg-white/15 backdrop-blur-xl border border-white/30 p-5 sm:p-8 shadow-2xl text-white">
                     <h2 className="text-xl sm:text-3xl lg:text-4xl font-semibold">
                       Apollo Hospitals
                     </h2>
@@ -213,17 +153,7 @@ export default function TopHospitalsCarousel() {
                       <a
                         href={slide.website}
                         target="_blank"
-                        className="
-                          inline-flex items-center gap-2
-                          rounded-full
-                          bg-white
-                          px-5 py-2.5 sm:py-3
-                          text-sm sm:text-base
-                          text-slate-900
-                          font-medium
-                          hover:bg-slate-100
-                          transition
-                        "
+                        className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 sm:py-3 text-sm sm:text-base text-slate-900 font-medium hover:bg-slate-100 transition"
                       >
                         Visit Apollo Website
                         <ExternalLink className="w-4 h-4" />
@@ -236,6 +166,21 @@ export default function TopHospitalsCarousel() {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* Mobile-only hide navigation arrows */}
+      <style jsx global>{`
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: none;
+        }
+
+        @media (min-width: 640px) {
+          .swiper-button-next,
+          .swiper-button-prev {
+            display: flex;
+          }
+        }
+      `}</style>
 
       {/* Edge ring */}
       <div className="pointer-events-none absolute inset-0 ring-1 ring-white/10" />

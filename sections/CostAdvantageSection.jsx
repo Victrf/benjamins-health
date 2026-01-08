@@ -46,7 +46,7 @@ export default function CostAdvantageSection() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/bg/cost-advantage.jpg')",
+            backgroundImage: "url('/bg/cost-advantage.webp')",
           }}
         />
         <div className="absolute inset-0 bg-slate-900/70" />

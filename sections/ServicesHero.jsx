@@ -27,10 +27,11 @@ export default function ServicesHero() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/bg/services-hero.jpg')",
+            backgroundImage: "url('/bg/services-hero.webp')",
           }}
         />
-        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm" />
+        {/* UPDATED OVERLAY (LESS BLUR) */}
+        <div className="absolute inset-0 bg-white/65 backdrop-blur-[0.25px]" />
       </motion.div>
 
       {/* CONTENT */}

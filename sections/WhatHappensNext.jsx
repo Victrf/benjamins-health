@@ -57,7 +57,7 @@ export default function WhatHappensNext() {
         <div
           className="absolute inset-0 bg-cover bg-center scale-110"
           style={{
-            backgroundImage: "url('/bg/what-happens-next.jpg')",
+            backgroundImage: "url('/bg/what-happens-next.webp')",
           }}
         />
         <div className="absolute inset-0 bg-slate-900/65" />

@@ -88,15 +88,15 @@ export default function TreatmentSpecialties() {
         className="absolute inset-0 z-0"
       >
         <Image
-          src="/bg/treatments-bg.jpg"
+          src="/bg/treatments-bg.webp"
           alt="Medical treatment background"
           fill
           className="object-cover"
         />
       </motion.div>
 
-      {/* OVERLAY */}
-      <div className="absolute inset-0 z-10 bg-white/85 backdrop-blur-sm" />
+      {/* UPDATED OVERLAY (CLEARER IMAGE) */}
+      <div className="absolute inset-0 z-10 bg-white/60 backdrop-blur-[0.25px]" />
 
       {/* CONTENT */}
       <motion.div

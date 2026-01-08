@@ -54,7 +54,7 @@ export default function ServiceFlow() {
       <motion.div style={{ y: bgY }} className="absolute inset-0 z-0">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/bg/service-flow.jpg')" }}
+          style={{ backgroundImage: "url('/bg/service-flow.webp')" }}
         />
         <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px]" />
       </motion.div>

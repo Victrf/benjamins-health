@@ -73,8 +73,8 @@ export default function HowItWorks() {
         />
       </motion.div>
 
-      {/* OVERLAY FOR READABILITY */}
-      <div className="absolute inset-0 z-10 bg-white/85 backdrop-blur-[1px]" />
+      {/* UPDATED OVERLAY (LESS BLUR, MORE DETAIL) */}
+      <div className="absolute inset-0 z-10 bg-white/75 backdrop-blur-[0.5px]" />
 
       {/* CONTENT */}
       <motion.div
@@ -100,7 +100,6 @@ export default function HowItWorks() {
 
         {/* STEPS */}
         <div className="relative">
-          {/* Vertical line (desktop only) */}
           <div className="hidden lg:block absolute left-1/2 top-0 h-full w-px bg-slate-300" />
 
           <div className="space-y-14 lg:space-y-0">
@@ -121,7 +120,6 @@ export default function HowItWorks() {
                     ${isLeft ? "lg:justify-start" : "lg:justify-end"}
                   `}
                 >
-                  {/* CONTENT CARD */}
                   <div
                     className="
                       w-full lg:w-[46%]
@@ -151,7 +149,6 @@ export default function HowItWorks() {
                     </p>
                   </div>
 
-                  {/* DOT */}
                   <div className="hidden lg:flex absolute left-1/2 top-10 -translate-x-1/2">
                     <span className="w-4 h-4 rounded-full bg-teal-600 border-4 border-white shadow" />
                   </div>

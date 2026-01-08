@@ -30,7 +30,7 @@ export default function MissionVision() {
         className="absolute inset-0 z-0"
       >
         <Image
-          src="/bg/mission-bg.jpg"
+          src="/bg/mission-bg.webp"
           alt="Healthcare mission background"
           fill
           className="object-cover"
@@ -38,8 +38,8 @@ export default function MissionVision() {
         />
       </motion.div>
 
-      {/* OVERLAY FOR READABILITY */}
-      <div className="absolute inset-0 z-10 bg-white/85 backdrop-blur-sm" />
+      {/* UPDATED OVERLAY (CLEARER IMAGE) */}
+      <div className="absolute inset-0 z-10 bg-white/60 backdrop-blur-[0.25px]" />
 
       {/* CONTENT */}
       <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-12">

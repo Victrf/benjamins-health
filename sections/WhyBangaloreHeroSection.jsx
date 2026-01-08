@@ -28,7 +28,7 @@ export default function WhyBangaloreHeroSection() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/bg/Tajmahal .jpg')",
+            backgroundImage: "url('/bg/Tajmahal .webp')",
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/85 via-slate-900/60 to-slate-900/30" />

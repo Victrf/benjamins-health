@@ -59,7 +59,7 @@ export default function WhyPatientsTrustUs() {
         className="absolute inset-0 z-0"
       >
         <Image
-          src="/bg/trust-bg.jpg"
+          src="/bg/trust-bg.webp"
           alt="Why patients trust us background"
           fill
           className="object-cover"

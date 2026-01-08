@@ -28,7 +28,7 @@ export default function ContactReassuranceCTA() {
         <div
           className="absolute inset-0 bg-cover bg-center scale-110"
           style={{
-            backgroundImage: "url('/bg/contact-reassurance.jpg')",
+            backgroundImage: "url('/bg/contact-reassurance.webp')",
           }}
         />
         <div className="absolute inset-0 bg-slate-900/65" />

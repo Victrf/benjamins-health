@@ -34,7 +34,6 @@ const methods = [
 ];
 
 export default function ContactMethods() {
-  // ✅ SAFE ref
   const sectionRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -60,7 +59,8 @@ export default function ContactMethods() {
             backgroundImage: "url('/bg/contact-bg.jpg')",
           }}
         />
-        <div className="absolute inset-0 bg-white/85 backdrop-blur-sm" />
+        {/* UPDATED OVERLAY (LESS BLUR) */}
+        <div className="absolute inset-0 bg-white/65 backdrop-blur-[0.25px]" />
       </motion.div>
 
       {/* CONTENT */}

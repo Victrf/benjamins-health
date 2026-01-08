@@ -26,7 +26,7 @@ export default function FounderSection() {
         className="absolute inset-0 z-0"
       >
         <Image
-          src="/bg/founder-bg.jpg"   // 👈 add your image here
+          src="/bg/founder-bg.webp"   // 👈 add your image here
           alt="Founder background"
           fill
           className="object-cover"
@@ -53,7 +53,7 @@ export default function FounderSection() {
               <div className="absolute -top-6 -left-6 w-32 h-32 bg-teal-500/10 rounded-full blur-2xl" />
 
               <Image
-                src="/founder/benjamin.jpg" // 👈 founder photo
+                src="/founder/benjamin.webp" // 👈 founder photo
                 alt="Benjamin Igiraneza"
                 width={420}
                 height={520}

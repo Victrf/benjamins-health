@@ -106,7 +106,7 @@ export default function FounderVideo() {
               muted
               controls
               playsInline
-              poster="/founder/video-poster.jpg"
+              poster="/founder/video-poster.webp"
             >
               <source
                 src="https://res.cloudinary.com/dtpqq0qcp/video/upload/f_auto,q_auto,w_1280/v1767796044/founder-message.web_zaqlqu.mp4"

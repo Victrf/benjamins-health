@@ -52,7 +52,6 @@ export default function TrustSnapshot() {
   const popupRef = useRef<HTMLDivElement>(null);
   const [isHospitalsOpen, setIsHospitalsOpen] = useState(false);
 
-  /* CLICK OUTSIDE TO CLOSE */
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
       if (
@@ -91,7 +90,8 @@ export default function TrustSnapshot() {
         />
       </motion.div>
 
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-white/95 via-white/90 to-white/95" />
+      {/* UPDATED OVERLAY (CLEARER IMAGE) */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-b from-white/65 via-white/55 to-white/65" />
 
       <div className="relative z-20 max-w-7xl mx-auto px-6 lg:px-12">
         {/* HEADER */}
@@ -143,12 +143,10 @@ export default function TrustSnapshot() {
                     transition-all cursor-pointer
                   "
                 >
-                  {/* ICON */}
                   <div className="w-12 h-12 shrink-0 rounded-xl bg-teal-500/10 flex items-center justify-center">
                     <Icon className="w-6 h-6 text-teal-600" />
                   </div>
 
-                  {/* TEXT */}
                   <div className="text-left sm:text-center">
                     <h3 className="font-semibold text-slate-900">
                       {item.title}
@@ -158,17 +156,8 @@ export default function TrustSnapshot() {
                     </p>
                   </div>
 
-                  {/* POPUP */}
                   {isTopHospitals && isHospitalsOpen && (
-                    <div
-                      className="
-                        absolute left-1/2 top-full mt-4
-                        -translate-x-1/2
-                        w-64 rounded-xl
-                        bg-white border border-slate-200
-                        shadow-xl z-50
-                      "
-                    >
+                    <div className="absolute left-1/2 top-full mt-4 -translate-x-1/2 w-64 rounded-xl bg-white border border-slate-200 shadow-xl z-50">
                       <ul className="p-4 space-y-3">
                         {topHospitals.map((h) => (
                           <li key={h.name}>

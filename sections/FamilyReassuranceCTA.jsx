@@ -29,7 +29,7 @@ export default function FamilyReassuranceCTA() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/bg/reassurance-bg.jpg')",
+            backgroundImage: "url('/bg/reassurance-bg.webp')",
           }}
         />
         <div className="absolute inset-0 bg-slate-900/70" />

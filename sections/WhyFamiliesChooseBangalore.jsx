@@ -46,7 +46,7 @@ export default function WhyFamiliesChooseBangalore() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/bg/families-bg.jpg')",
+            backgroundImage: "url('/bg/families-bg.webp')",
           }}
         />
         <div className="absolute inset-0 bg-slate-900/75" />

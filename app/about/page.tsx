@@ -25,10 +25,11 @@ export default function AboutPage() {
       <EthicsTransparency />
       <WhyPatientsTrustUs />
       <FounderSection />
+        <FounderVideo />
       <FounderQuote />
       <FounderValues />
       <PatientReassuranceCTA />
-      <FounderVideo />
+   
       
     
       {/* We will add more sections here */}

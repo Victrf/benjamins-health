@@ -59,9 +59,10 @@ export default function ServicesTimelineArrow() {
       >
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/bg/services-overview.jpg')" }}
+          style={{ backgroundImage: "url('/bg/services-overview.webp')" }}
         />
-        <div className="absolute inset-0 bg-white/80 backdrop-blur-sm" />
+        {/* UPDATED OVERLAY (LESS BLUR) */}
+        <div className="absolute inset-0 bg-white/65 backdrop-blur-[0.25px]" />
       </motion.div>
 
       {/* CONTENT */}
@@ -85,7 +86,6 @@ export default function ServicesTimelineArrow() {
 
         {/* TIMELINE */}
         <div className="relative">
-          {/* Center line */}
           <div className="absolute left-1/2 top-0 h-full w-px bg-teal-500/30 hidden lg:block" />
 
           <div className="space-y-16">
@@ -104,7 +104,6 @@ export default function ServicesTimelineArrow() {
                     isLeft ? "lg:justify-start" : "lg:justify-end"
                   }`}
                 >
-                  {/* ARROW CARD */}
                   <motion.div
                     whileHover={{ x: 6 }}
                     className={`
@@ -142,7 +141,6 @@ export default function ServicesTimelineArrow() {
                     </div>
                   </motion.div>
 
-                  {/* DOT */}
                   <div className="hidden lg:flex absolute left-1/2 top-10 -translate-x-1/2 z-20">
                     <span className="w-4 h-4 rounded-full bg-teal-600 border-4 border-white shadow" />
                   </div>

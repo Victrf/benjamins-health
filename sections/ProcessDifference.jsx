@@ -56,7 +56,7 @@ export default function ProcessDifference() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/bg/process-difference.jpg')",
+            backgroundImage: "url('/bg/process-difference.webp')",
           }}
         />
         <div className="absolute inset-0 bg-slate-900/70" />

@@ -56,7 +56,7 @@ export default function PatientSafetySection() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/bg/patient-safety.jpg')",
+            backgroundImage: "url('/bg/patient-safety.webp')",
           }}
         />
         <div className="absolute inset-0 bg-slate-900/70" />

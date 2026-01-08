@@ -28,7 +28,7 @@ export default function ContactLocation() {
         <div
           className="absolute inset-0 bg-cover bg-center scale-110"
           style={{
-            backgroundImage: "url('/bg/contact-location.jpg')",
+            backgroundImage: "url('/bg/contact-location.webp')",
           }}
         />
         <div className="absolute inset-0 bg-slate-900/70" />

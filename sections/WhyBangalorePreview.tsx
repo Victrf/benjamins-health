@@ -69,8 +69,8 @@ export default function WhyBangalorePreview() {
         />
       </motion.div>
 
-      {/* OVERLAY FOR READABILITY */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-r from-white via-white/95 to-white/80" />
+      {/* UPDATED OVERLAY (LESS BLUR / MORE DETAIL) */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-r from-white/85 via-white/70 to-white/55" />
 
       {/* CONTENT */}
       <motion.div
@@ -175,7 +175,6 @@ export default function WhyBangalorePreview() {
               <ArrowRight className="w-4 h-4" />
             </Link>
 
-            {/* Decorative accent */}
             <span className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-teal-500/10 blur-2xl" />
           </motion.div>
         </div>

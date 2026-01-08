@@ -57,7 +57,7 @@ export default function ContactReassurance() {
         <div
           className="absolute inset-0 bg-cover bg-center scale-110"
           style={{
-            backgroundImage: "url('/bg/contact-reassurance.jpg')",
+            backgroundImage: "url('/bg/contact-reassurance.webp')",
           }}
         />
 

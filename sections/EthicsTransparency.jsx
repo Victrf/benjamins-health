@@ -23,7 +23,6 @@ import {
 } from "lucide-react";
 
 const principles = [
-  /* ===== ETHICS ===== */
   {
     icon: ShieldCheck,
     title: "Patient-First Guidance",
@@ -44,8 +43,6 @@ const principles = [
     title: "Ethical Coordination",
     desc: "We help patients make informed decisions without pressure or obligation.",
   },
-
-  /* ===== CARE & SUPPORT ===== */
   {
     icon: HeartHandshake,
     title: "Dedicated Care Giving",
@@ -81,8 +78,6 @@ const principles = [
     title: "24/7 Patient Support",
     desc: "Always-available assistance for emergencies, questions, or coordination needs.",
   },
-
-  /* ===== BENEFIT ===== */
   {
     icon: BadgePercent,
     title: "10% Medical Cost Benefit",
@@ -112,15 +107,15 @@ export default function EthicsTransparency() {
         className="absolute inset-0 z-0"
       >
         <Image
-          src="/bg/ethics-bg.jpg"
+          src="/bg/ethics-bg.webp"
           alt="Patient support and transparency"
           fill
           className="object-cover"
         />
       </motion.div>
 
-      {/* OVERLAY */}
-      <div className="absolute inset-0 z-10 bg-white/85 backdrop-blur-sm" />
+      {/* UPDATED OVERLAY (CLEARER IMAGE) */}
+      <div className="absolute inset-0 z-10 bg-white/60 backdrop-blur-[0.25px]" />
 
       {/* CONTENT */}
       <motion.div
@@ -133,7 +128,6 @@ export default function EthicsTransparency() {
         }}
         className="relative z-20 max-w-7xl mx-auto px-6 lg:px-12"
       >
-        {/* HEADER */}
         <div className="max-w-3xl mb-16">
           <h2 className="text-3xl sm:text-4xl font-semibold text-slate-900">
             Ethics, Care & Patient Assistance
@@ -145,7 +139,6 @@ export default function EthicsTransparency() {
           </p>
         </div>
 
-        {/* GRID */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
           {principles.map((item, i) => {
             const Icon = item.icon;
@@ -192,7 +185,6 @@ export default function EthicsTransparency() {
           })}
         </div>
 
-        {/* FOOTNOTE */}
         <p className="mt-12 text-sm text-slate-500 max-w-xl">
           Our responsibility is to guide, support, and simplify the journey —
           medical decisions always remain between patients and their doctors.

@@ -56,7 +56,7 @@ export default function ExpertDoctorsSection() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/bg/expert-doctors.jpg')",
+            backgroundImage: "url('/bg/expert-doctors.webp')",
           }}
         />
         <div className="absolute inset-0 bg-slate-900/75" />

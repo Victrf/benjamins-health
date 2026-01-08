@@ -34,7 +34,7 @@ export default function MovingMediaSection() {
       <motion.div style={{ y: bgY }} className="absolute inset-0 z-0">
         <div
           className="absolute inset-0 bg-cover bg-center scale-110"
-          style={{ backgroundImage: "url('/bg/motion-bg.jpg')" }}
+          style={{ backgroundImage: "url('/bg/motion-bg.webp')" }}
         />
         <div className="absolute inset-0 bg-slate-900/70" />
       </motion.div>

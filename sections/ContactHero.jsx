@@ -27,7 +27,7 @@ export default function ContactHero() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/bg/motion-bg.jpg')",
+            backgroundImage: "url('/bg/motion-bg.webp')",
           }}
         />
         <div className="absolute inset-0 bg-slate-900/65" />

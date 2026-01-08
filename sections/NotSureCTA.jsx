@@ -11,9 +11,9 @@ import { MessageCircle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const bgImages = [
-  "/bg/cta-1.jpg",
-  "/bg/cta-2.jpg",
-  "/bg/cta-3.jpg",
+  "/bg/cta-1.webp",
+  "/bg/cta-2.webp",
+  "/bg/cta-3.webp",
 ];
 
 export default function NotSureCTA() {

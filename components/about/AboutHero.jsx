@@ -10,9 +10,9 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const bgImages = [
-  "/about/about-1.jpg",
-  "/about/about-2.jpg",
-  "/about/about-3.jpg",
+  "/about/about-1.webp",
+  "/about/about-2.webp",
+  "/about/about-3.webp",
 ];
 
 export default function AboutHero() {
@@ -62,8 +62,8 @@ export default function AboutHero() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Readability overlay */}
-        <div className="absolute inset-0 bg-white/85 sm:bg-white/80 backdrop-blur-sm" />
+        {/* FULLY UNBLURRED OVERLAY */}
+        <div className="absolute inset-0 bg-white/55 sm:bg-white/50" />
       </div>
 
       {/* Content */}
