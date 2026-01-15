@@ -1,24 +1,34 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { MessageCircle, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="relative bg-slate-900 text-slate-300">
-      {/* Top divider */}
       <div className="absolute top-0 left-0 w-full h-px bg-slate-800" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20">
         <div className="grid gap-12 md:grid-cols-4">
           {/* BRAND */}
           <div className="md:col-span-1">
-            <div className="relative inline-block mb-4">
-              <span className="absolute -left-4 -top-4 text-teal-500/20 text-5xl font-bold select-none">
-                +
-              </span>
-              <span className="relative text-xl font-semibold text-white">
-                The Benjamin’s Global Connect
+            {/* aligned with paragraph */}
+            <div className="relative mb-4 -ml-2.5">
+              {/* LOGO */}
+              <div className="absolute left-0 top-0 w-11 h-11 translate-x-1 -translate-y-2.5">
+                <Image
+                  src="/bg/logo.png"
+                  alt="The Benjamin’s Global Healthcare Connect logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
+              {/* TEXT — moved slightly away from logo */}
+              <span className="block pl-8 text-xl font-semibold text-white leading-tight">
+                The Benjamin’s Global <br />
+                Healthcare Connect
               </span>
             </div>
 
@@ -124,19 +134,12 @@ export default function Footer() {
 
           <div className="flex items-center gap-3">
             <span>Designed for international healthcare guidance</span>
-
             <span className="hidden sm:inline text-slate-700">•</span>
-
             <a
               href="https://github.com/Victrf"
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                text-slate-400
-                hover:text-teal-400
-                transition-colors
-                whitespace-nowrap
-              "
+              className="text-slate-400 hover:text-teal-400 transition-colors whitespace-nowrap"
             >
               Built by kay
             </a>
