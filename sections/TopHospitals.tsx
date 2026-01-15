@@ -3,7 +3,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import Image from "next/image";
-import { Download, ExternalLink } from "lucide-react";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -14,8 +13,6 @@ const slides = [
     image: "/hospitals/apollo.webp",
     description:
       "A leading multi-specialty hospital known for advanced treatments, international standards, and patient-centered care.",
-    website: "https://www.fortishealthcare.com",
-    brochure: "/brochures/fortis-bangalore.pdf",
     variant: "full",
   },
   {
@@ -23,14 +20,12 @@ const slides = [
     image: "/hospitals/manipal.webp",
     description:
       "One of India’s most trusted hospital networks, known for clinical excellence, advanced technology, and compassionate care.",
-    website: "https://www.manipalhospitals.com",
     variant: "simple",
   },
   {
     name: "Apollo Hospitals, Bangalore",
     video:
       "https://res.cloudinary.com/dtpqq0qcp/video/upload/f_auto,q_auto,w_1280/v1767794489/apo.web_mvc8cy.mp4",
-    website: "https://www.apollohospitals.com",
     variant: "video",
   },
 ];
@@ -86,26 +81,6 @@ export default function TopHospitalsCarousel() {
                     <p className="mt-2 sm:mt-3 text-sm sm:text-base text-white/90 leading-relaxed">
                       {slide.description}
                     </p>
-
-                    <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-3">
-                      <a
-                        href={slide.brochure}
-                        download
-                        className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-4 sm:px-5 py-2.5 sm:py-3 text-slate-900 text-sm sm:text-base font-medium hover:bg-slate-100 transition"
-                      >
-                        <Download className="w-4 h-4" />
-                        Download Brochure
-                      </a>
-
-                      <a
-                        href={slide.website}
-                        target="_blank"
-                        className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 px-4 sm:px-5 py-2.5 sm:py-3 text-sm sm:text-base text-white hover:bg-white/15 transition"
-                      >
-                        Visit Website
-                        <ExternalLink className="w-4 h-4" />
-                      </a>
-                    </div>
                   </div>
                 </div>
               )}
@@ -121,17 +96,6 @@ export default function TopHospitalsCarousel() {
                     <p className="mt-2 sm:mt-3 text-sm sm:text-base text-white/90">
                       {slide.description}
                     </p>
-
-                    <div className="mt-4 sm:mt-6">
-                      <a
-                        href={slide.website}
-                        target="_blank"
-                        className="inline-flex items-center gap-2 rounded-full border border-white/40 px-5 py-2.5 sm:py-3 text-sm sm:text-base text-white hover:bg-white/15 transition"
-                      >
-                        Visit Website
-                        <ExternalLink className="w-4 h-4" />
-                      </a>
-                    </div>
                   </div>
                 </div>
               )}
@@ -148,17 +112,6 @@ export default function TopHospitalsCarousel() {
                       One of Asia’s most trusted healthcare institutions,
                       delivering world-class care with global expertise.
                     </p>
-
-                    <div className="mt-4 sm:mt-6">
-                      <a
-                        href={slide.website}
-                        target="_blank"
-                        className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 sm:py-3 text-sm sm:text-base text-slate-900 font-medium hover:bg-slate-100 transition"
-                      >
-                        Visit Apollo Website
-                        <ExternalLink className="w-4 h-4" />
-                      </a>
-                    </div>
                   </div>
                 </div>
               )}
