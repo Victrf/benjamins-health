@@ -65,7 +65,7 @@ export default function Footer() {
                   href="/why-bangalore"
                   className="hover:text-teal-400 transition"
                 >
-                  Why Bangalore
+                  Why India
                 </Link>
               </li>
               <li>
