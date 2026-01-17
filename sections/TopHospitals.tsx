@@ -98,7 +98,7 @@ const accentLine = {
   },
 };
 
-/* ------------------ LOGO + CONNECTOR ANIMATION ------------------ */
+/* ------------------ ANIMATION ------------------ */
 
 const pulseRing = {
   animate: {
@@ -134,7 +134,11 @@ const junctionRipple = {
 const linePulse = {
   animate: {
     strokeDashoffset: [0, -180],
-    transition: { duration: 2, repeat: Infinity, ease: "linear" },
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+      ease: [0, 0, 1, 1] as const,
+    },
   },
 };
 
@@ -147,17 +151,19 @@ const lineGlow = {
 
 /* ------------------ COMPONENT ------------------ */
 
-export default function TopHospitals() {
+export default function TopHospitalsCarousel() {
   return (
     <section className="relative w-full h-[50vh] sm:h-[80vh] overflow-hidden">
-      <Swiper modules={[Autoplay, Navigation]} autoplay={{ delay: 4500 }} navigation loop speed={900} className="w-full h-full">
+      <Swiper modules={[Autoplay, Navigation]} autoplay={{ delay: 4500, disableOnInteraction: false }} navigation loop speed={900} className="w-full h-full">
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
             <div className="relative w-full h-full">
               {slide.image && <Image src={slide.image} alt={slide.name} fill priority={i === 0} className="object-cover" />}
               {slide.video && <video className="w-full h-full object-cover" src={slide.video} autoPlay muted loop playsInline />}
+
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/30" />
 
+              {/* TEXT */}
               <div className="absolute inset-0 flex items-end sm:items-start">
                 <motion.div variants={textContainer} initial="hidden" animate="visible" className="relative m-4 sm:m-10 lg:m-16 max-w-md sm:max-w-xl rounded-2xl bg-white/15 backdrop-blur-xl border border-white/30 p-5 sm:p-8 shadow-2xl text-white">
                   <motion.h2 variants={textItem} className="text-xl sm:text-3xl font-semibold">{slide.name}</motion.h2>
@@ -165,6 +171,7 @@ export default function TopHospitals() {
                   <motion.p variants={textItem} className="mt-3 text-sm sm:text-base text-white/90">{slide.description}</motion.p>
                   <motion.span variants={textItem} className="mt-4 inline-block text-xs uppercase tracking-widest text-white/70">Trusted Care • Advanced Medicine</motion.span>
 
+                  {/* LOGO */}
                   <div className="pointer-events-none hidden lg:block absolute -right-28 top-1/2 -translate-y-1/2">
                     <div className="relative w-24 h-24">
                       <motion.span variants={pulseRing} animate="animate" className="absolute inset-0 rounded-full border-2 border-blue-400/50" />
@@ -177,6 +184,7 @@ export default function TopHospitals() {
                 </motion.div>
               </div>
 
+              {/* CONNECTOR */}
               <div className="pointer-events-none hidden lg:block absolute inset-0">
                 <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1000 600" preserveAspectRatio="none">
                   <path d="M 520 260 L 600 300 L 780 375" stroke="rgba(255,255,255,0.25)" strokeWidth="2" fill="none" />
