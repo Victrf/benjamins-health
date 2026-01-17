@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, easeOut, easeInOut } from "framer-motion";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -75,7 +75,7 @@ const textContainer = {
     y: 0,
     transition: {
       duration: 0.8,
-      ease: [0.22, 1, 0.36, 1] as const, // ✅ FIXED FOR TS
+      ease: [0.22, 1, 0.36, 1] as const,
       staggerChildren: 0.15,
     },
   },
@@ -86,7 +86,7 @@ const textItem = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.6, ease: easeOut },
   },
 };
 
@@ -94,7 +94,7 @@ const accentLine = {
   hidden: { scaleX: 0 },
   visible: {
     scaleX: 1,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.6, ease: easeOut },
   },
 };
 
@@ -104,14 +104,14 @@ const pulseRing = {
   animate: {
     scale: [1, 1.8],
     opacity: [0.6, 0],
-    transition: { duration: 2.5, repeat: Infinity, ease: "easeOut" },
+    transition: { duration: 2.5, repeat: Infinity, ease: easeOut },
   },
 };
 
 const pulseIcon = {
   animate: {
     scale: [1, 1.08, 1],
-    transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
+    transition: { duration: 2, repeat: Infinity, ease: easeInOut },
   },
 };
 
@@ -141,69 +141,29 @@ const linePulse = {
 const lineGlow = {
   animate: {
     opacity: [0.3, 0.6, 0.3],
-    transition: { duration: 2.5, repeat: Infinity, ease: "easeInOut" },
+    transition: { duration: 2.5, repeat: Infinity, ease: easeInOut },
   },
 };
 
 /* ------------------ COMPONENT ------------------ */
 
-export default function TopHospitalsCarousel() {
+export default function TopHospitals() {
   return (
     <section className="relative w-full h-[50vh] sm:h-[80vh] overflow-hidden">
-      <Swiper
-        modules={[Autoplay, Navigation]}
-        autoplay={{ delay: 4500, disableOnInteraction: false }}
-        navigation
-        loop
-        speed={900}
-        className="w-full h-full"
-      >
+      <Swiper modules={[Autoplay, Navigation]} autoplay={{ delay: 4500 }} navigation loop speed={900} className="w-full h-full">
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
             <div className="relative w-full h-full">
-              {slide.image && (
-                <Image
-                  src={slide.image}
-                  alt={slide.name}
-                  fill
-                  priority={i === 0}
-                  className="object-cover"
-                />
-              )}
-
-              {slide.video && (
-                <video
-                  className="w-full h-full object-cover"
-                  src={slide.video}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                />
-              )}
-
+              {slide.image && <Image src={slide.image} alt={slide.name} fill priority={i === 0} className="object-cover" />}
+              {slide.video && <video className="w-full h-full object-cover" src={slide.video} autoPlay muted loop playsInline />}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/30" />
 
               <div className="absolute inset-0 flex items-end sm:items-start">
-                <motion.div
-                  variants={textContainer}
-                  initial="hidden"
-                  animate="visible"
-                  className="relative m-4 sm:m-10 lg:m-16 max-w-md sm:max-w-xl rounded-2xl bg-white/15 backdrop-blur-xl border border-white/30 p-5 sm:p-8 shadow-2xl text-white"
-                >
-                  <motion.h2 variants={textItem} className="text-xl sm:text-3xl font-semibold">
-                    {slide.name}
-                  </motion.h2>
-
+                <motion.div variants={textContainer} initial="hidden" animate="visible" className="relative m-4 sm:m-10 lg:m-16 max-w-md sm:max-w-xl rounded-2xl bg-white/15 backdrop-blur-xl border border-white/30 p-5 sm:p-8 shadow-2xl text-white">
+                  <motion.h2 variants={textItem} className="text-xl sm:text-3xl font-semibold">{slide.name}</motion.h2>
                   <motion.div variants={accentLine} className="origin-left mt-3 h-[2px] w-12 bg-white/80" />
-
-                  <motion.p variants={textItem} className="mt-3 text-sm sm:text-base text-white/90">
-                    {slide.description}
-                  </motion.p>
-
-                  <motion.span variants={textItem} className="mt-4 inline-block text-xs uppercase tracking-widest text-white/70">
-                    Trusted Care • Advanced Medicine
-                  </motion.span>
+                  <motion.p variants={textItem} className="mt-3 text-sm sm:text-base text-white/90">{slide.description}</motion.p>
+                  <motion.span variants={textItem} className="mt-4 inline-block text-xs uppercase tracking-widest text-white/70">Trusted Care • Advanced Medicine</motion.span>
 
                   <div className="pointer-events-none hidden lg:block absolute -right-28 top-1/2 -translate-y-1/2">
                     <div className="relative w-24 h-24">
@@ -230,12 +190,8 @@ export default function TopHospitalsCarousel() {
                 </div>
 
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.6 }} className="absolute right-14 bottom-28 max-w-md rounded-2xl bg-white/12 backdrop-blur-xl border border-white/25 p-6 text-white shadow-xl">
-                  <h4 className="text-xs font-semibold uppercase tracking-widest text-cyan-300">
-                    Benjamin’s Global Healthcare Connect
-                  </h4>
-                  <p className="mt-3 text-sm leading-relaxed text-white/90">
-                    {associationCopy[slide.name]}
-                  </p>
+                  <h4 className="text-xs font-semibold uppercase tracking-widest text-cyan-300">Benjamin’s Global Healthcare Connect</h4>
+                  <p className="mt-3 text-sm leading-relaxed text-white/90">{associationCopy[slide.name]}</p>
                 </motion.div>
               </div>
             </div>
