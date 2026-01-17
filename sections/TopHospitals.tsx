@@ -75,7 +75,7 @@ const textContainer = {
     y: 0,
     transition: {
       duration: 0.8,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const, // ✅ FIXED FOR TS
       staggerChildren: 0.15,
     },
   },
@@ -184,15 +184,12 @@ export default function TopHospitalsCarousel() {
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/30" />
 
-              {/* MAIN CONTENT */}
               <div className="absolute inset-0 flex items-end sm:items-start">
                 <motion.div
                   variants={textContainer}
                   initial="hidden"
                   animate="visible"
-                  className="relative m-4 sm:m-10 lg:m-16 max-w-md sm:max-w-xl
-                             rounded-2xl bg-white/15 backdrop-blur-xl
-                             border border-white/30 p-5 sm:p-8 shadow-2xl text-white"
+                  className="relative m-4 sm:m-10 lg:m-16 max-w-md sm:max-w-xl rounded-2xl bg-white/15 backdrop-blur-xl border border-white/30 p-5 sm:p-8 shadow-2xl text-white"
                 >
                   <motion.h2 variants={textItem} className="text-xl sm:text-3xl font-semibold">
                     {slide.name}
@@ -204,14 +201,10 @@ export default function TopHospitalsCarousel() {
                     {slide.description}
                   </motion.p>
 
-                  <motion.span
-                    variants={textItem}
-                    className="mt-4 inline-block text-xs uppercase tracking-widest text-white/70"
-                  >
+                  <motion.span variants={textItem} className="mt-4 inline-block text-xs uppercase tracking-widest text-white/70">
                     Trusted Care • Advanced Medicine
                   </motion.span>
 
-                  {/* LOGO ORIGIN */}
                   <div className="pointer-events-none hidden lg:block absolute -right-28 top-1/2 -translate-y-1/2">
                     <div className="relative w-24 h-24">
                       <motion.span variants={pulseRing} animate="animate" className="absolute inset-0 rounded-full border-2 border-blue-400/50" />
@@ -224,28 +217,19 @@ export default function TopHospitalsCarousel() {
                 </motion.div>
               </div>
 
-              {/* CONNECTOR SYSTEM (LG ONLY) */}
               <div className="pointer-events-none hidden lg:block absolute inset-0">
-                {/* SVG CONNECTOR */}
                 <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1000 600" preserveAspectRatio="none">
                   <path d="M 520 260 L 600 300 L 780 375" stroke="rgba(255,255,255,0.25)" strokeWidth="2" fill="none" />
                   <motion.path d="M 520 260 L 600 300 L 780 375" stroke="rgba(34,211,238,0.35)" strokeWidth="6" fill="none" variants={lineGlow} animate="animate" />
                   <motion.path d="M 520 260 L 600 300 L 780 375" stroke="rgba(34,211,238,0.95)" strokeWidth="2.5" fill="none" strokeDasharray="14 180" variants={linePulse} animate="animate" />
                 </svg>
 
-                {/* JUNCTION NODE */}
                 <div className="absolute left-[60%] top-[50%] -translate-x-1/2 -translate-y-1/2">
                   <motion.span variants={junctionRipple} animate="animate" className="absolute h-10 w-10 rounded-full border border-cyan-400/50" />
                   <motion.span variants={junctionPulse} animate="animate" className="relative z-10 h-3 w-3 rounded-full bg-cyan-400" />
                 </div>
 
-                {/* ASSOCIATION CARD */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5, duration: 0.6 }}
-                  className="absolute right-14 bottom-28 max-w-md rounded-2xl bg-white/12 backdrop-blur-xl border border-white/25 p-6 text-white shadow-xl"
-                >
+                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.6 }} className="absolute right-14 bottom-28 max-w-md rounded-2xl bg-white/12 backdrop-blur-xl border border-white/25 p-6 text-white shadow-xl">
                   <h4 className="text-xs font-semibold uppercase tracking-widest text-cyan-300">
                     Benjamin’s Global Healthcare Connect
                   </h4>
