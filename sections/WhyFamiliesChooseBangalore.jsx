@@ -71,7 +71,7 @@ export default function WhyFamiliesChooseBangalore() {
           </span>
 
           <h2 className="text-3xl sm:text-4xl font-semibold text-white">
-            Why Families Choose Bangalore
+            Why Families Choose India
           </h2>
 
           <p className="mt-6 text-lg text-white/90 leading-relaxed">

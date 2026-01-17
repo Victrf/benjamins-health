@@ -54,7 +54,7 @@ export default function WhyBangaloreHeroSection() {
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-white leading-tight">
             Why
-            <span className="text-teal-400"> Bangalore</span>
+            <span className="text-teal-400"> India</span>
             <br className="hidden sm:block" />
             Is a Global Healthcare Hub
           </h1>

@@ -54,7 +54,7 @@ export default function FounderSection() {
 
               <Image
                 src="/founder/benjamin.webp" // 👈 founder photo
-                alt="Benjamin Igiraneza"
+                alt="Benjamin IGIRANEZA"
                 width={420}
                 height={520}
                 className="relative rounded-3xl object-cover shadow-xl"

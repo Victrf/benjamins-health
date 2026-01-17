@@ -16,7 +16,7 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
-  { name: "Why Bangalore", href: "/why-bangalore" },
+  { name: "Why India", href: "/why-bangalore" },
   { name: "Contact", href: "/contact" },
 ];
 

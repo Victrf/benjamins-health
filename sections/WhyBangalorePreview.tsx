@@ -83,7 +83,7 @@ export default function WhyBangalorePreview() {
         {/* HEADER */}
         <div className="max-w-2xl mb-16">
           <h2 className="text-3xl sm:text-4xl font-semibold text-slate-900">
-            Why Choose Bangalore for Treatment?
+            Why Choose India for Treatment?
           </h2>
           <p className="mt-4 text-lg text-slate-600">
             Bangalore is one of the world’s leading medical destinations,
@@ -171,7 +171,7 @@ export default function WhyBangalorePreview() {
                 transition
               "
             >
-              Explore Bangalore Advantage
+              Explore India Advantage
               <ArrowRight className="w-4 h-4" />
             </Link>
 
