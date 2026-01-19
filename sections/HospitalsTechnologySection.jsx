@@ -13,7 +13,7 @@ const features = [
   {
     icon: Building2,
     title: "Internationally Accredited Hospitals",
-    desc: "Bangalore is home to hospitals accredited by JCI and NABH, meeting the highest global standards for patient safety and quality care.",
+    desc: "India is home to hospitals accredited by JCI and NABH, meeting the highest global standards for patient safety and quality care.",
   },
   {
     icon: Cpu,
@@ -85,7 +85,7 @@ export default function HospitalsTechnologySection() {
           </h2>
 
           <p className="mt-6 text-lg text-white/90 leading-relaxed">
-            Bangalore’s healthcare ecosystem combines globally accredited
+            India’s healthcare ecosystem combines globally accredited
             hospitals with cutting-edge medical technology — delivering
             outcomes that meet and exceed international benchmarks.
           </p>

@@ -141,7 +141,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-teal-400 transition-colors whitespace-nowrap"
             >
-              Built by kay
+              Built by KAY
             </a>
           </div>
         </div>

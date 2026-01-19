@@ -86,7 +86,7 @@ export default function WhyBangalorePreview() {
             Why Choose India for Treatment?
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            Bangalore is one of the world’s leading medical destinations,
+            India is one of the world’s leading medical destinations,
             combining quality healthcare, advanced technology, and affordability.
           </p>
         </div>
@@ -152,7 +152,7 @@ export default function WhyBangalorePreview() {
             </h3>
 
             <p className="mt-4 text-slate-600 leading-relaxed">
-              Thousands of international patients choose Bangalore every year
+              Thousands of international patients choose india every year
               for advanced medical treatment, compassionate care, and seamless
               coordination.
             </p>

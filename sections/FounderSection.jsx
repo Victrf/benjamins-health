@@ -74,7 +74,7 @@ export default function FounderSection() {
             </span>
 
             <h2 className="mt-4 text-3xl sm:text-4xl font-semibold text-slate-900">
-              Benjamin Igiraneza
+              Benjamin IGIRANEZA
             </h2>
 
             <p className="mt-6 text-lg text-slate-600 leading-relaxed">

@@ -85,7 +85,7 @@ export default function PatientSafetySection() {
           </h2>
 
           <p className="mt-6 text-lg text-white/90 leading-relaxed">
-            Healthcare in Bangalore goes beyond procedures.
+            Healthcare in India goes beyond procedures.
             It is built around patient safety, emotional comfort,
             and a recovery environment that supports both patients
             and their families.

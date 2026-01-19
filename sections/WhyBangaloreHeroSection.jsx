@@ -61,7 +61,7 @@ export default function WhyBangaloreHeroSection() {
 
           {/* Description */}
           <p className="mt-6 text-lg text-white/90 leading-relaxed">
-            Bangalore combines internationally accredited hospitals,
+            India combines internationally accredited hospitals,
             globally trained doctors, advanced medical technology,
             and affordable treatment — making it one of the most trusted
             destinations for international patients.

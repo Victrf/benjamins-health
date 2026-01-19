@@ -8,7 +8,7 @@ const points = [
   {
     icon: DollarSign,
     title: "60–80% Lower Treatment Costs",
-    desc: "High-quality medical procedures in Bangalore cost significantly less than in the US, UK, or Europe — without compromising standards.",
+    desc: "High-quality medical procedures in India cost significantly less than in the US, UK, or Europe — without compromising standards.",
   },
   {
     icon: Hospital,
@@ -75,7 +75,7 @@ export default function CostAdvantageSection() {
           </h2>
 
           <p className="mt-6 text-lg text-white/90 leading-relaxed">
-            Bangalore offers exceptional medical outcomes at a fraction
+            India offers exceptional medical outcomes at a fraction
             of the cost found in many Western countries — making advanced
             treatment accessible without financial strain.
           </p>

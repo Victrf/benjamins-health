@@ -40,6 +40,13 @@ const slides = [
     variant: "simple",
   },
   {
+    name: "Ramaiah Memorial Hospital, Bangalore",
+    image: "/hospitals/Ramaiah.jpeg",
+    description:
+      "A premier tertiary care institution known for multi-specialty excellence, advanced surgical facilities, and comprehensive patient-focused treatment.",
+    variant: "simple",
+  },
+  {
     name: "Apollo Hospitals, Bangalore",
     video:
       "https://res.cloudinary.com/dtpqq0qcp/video/upload/f_auto,q_auto,w_1280/v1767794489/apo.web_mvc8cy.mp4",
@@ -61,6 +68,9 @@ const associationCopy: Record<string, string> = {
 
   "Sparsh Hospital, Bangalore":
     "Partnering with Sparsh Hospital’s specialized orthopaedic and trauma care facilities, Benjamin’s Global Healthcare Connect facilitates access to advanced surgical technologies, structured rehabilitation programs, and recovery-focused care environments.",
+
+  "Ramaiah Memorial Hospital, Bangalore":
+    "In partnership with Ramaiah Memorial Hospital’s advanced tertiary care ecosystem, Benjamin’s Global Healthcare Connect enables international patients to access specialized departments, modern surgical infrastructure, and coordinated multi-disciplinary treatment pathways.",
 
   "Apollo Hospitals, Bangalore":
     "Aligned with Apollo Hospitals’ globally recognized infrastructure and research-driven care standards, Benjamin’s Global Healthcare Connect supports international patients with coordinated treatment pathways and advanced medical technologies.",
@@ -163,7 +173,6 @@ export default function TopHospitalsCarousel() {
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/30" />
 
-              {/* TEXT */}
               <div className="absolute inset-0 flex items-end sm:items-start">
                 <motion.div variants={textContainer} initial="hidden" animate="visible" className="relative m-4 sm:m-10 lg:m-16 max-w-md sm:max-w-xl rounded-2xl bg-white/15 backdrop-blur-xl border border-white/30 p-5 sm:p-8 shadow-2xl text-white">
                   <motion.h2 variants={textItem} className="text-xl sm:text-3xl font-semibold">{slide.name}</motion.h2>
@@ -171,7 +180,6 @@ export default function TopHospitalsCarousel() {
                   <motion.p variants={textItem} className="mt-3 text-sm sm:text-base text-white/90">{slide.description}</motion.p>
                   <motion.span variants={textItem} className="mt-4 inline-block text-xs uppercase tracking-widest text-white/70">Trusted Care • Advanced Medicine</motion.span>
 
-                  {/* LOGO */}
                   <div className="pointer-events-none hidden lg:block absolute -right-28 top-1/2 -translate-y-1/2">
                     <div className="relative w-24 h-24">
                       <motion.span variants={pulseRing} animate="animate" className="absolute inset-0 rounded-full border-2 border-blue-400/50" />
@@ -184,7 +192,6 @@ export default function TopHospitalsCarousel() {
                 </motion.div>
               </div>
 
-              {/* CONNECTOR */}
               <div className="pointer-events-none hidden lg:block absolute inset-0">
                 <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1000 600" preserveAspectRatio="none">
                   <path d="M 520 260 L 600 300 L 780 375" stroke="rgba(255,255,255,0.25)" strokeWidth="2" fill="none" />

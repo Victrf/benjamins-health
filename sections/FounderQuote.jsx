@@ -51,7 +51,7 @@ export default function FounderQuote() {
 
         {/* AUTHOR */}
         <p className="mt-6 text-sm text-slate-600">
-          — <span className="font-semibold text-slate-800">Benjamin Igiraneza</span>,  
+          — <span className="font-semibold text-slate-800">Benjamin IGIRANEZA</span>,  
           Founder & Healthcare Consultant
         </p>
       </motion.div>

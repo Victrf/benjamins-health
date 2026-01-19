@@ -28,7 +28,7 @@ const highlights = [
   {
     icon: Globe,
     title: "Trusted by International Patients",
-    desc: "Bangalore’s doctors regularly treat patients from Africa, the Middle East, Europe, and beyond.",
+    desc: "India’s doctors regularly treat patients from Africa, the Middle East, Europe, and beyond.",
   },
 ];
 
@@ -85,7 +85,7 @@ export default function ExpertDoctorsSection() {
           </h2>
 
           <p className="mt-6 text-lg text-white/90 leading-relaxed">
-            Bangalore’s healthcare excellence is driven by doctors who
+            India’s healthcare excellence is driven by doctors who
             combine international training, deep specialization, and
             a strong commitment to ethical, patient-first care.
           </p>

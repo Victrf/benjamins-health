@@ -23,7 +23,7 @@ const trustPoints = [
   {
     icon: Users,
     title: "Trusted Hospital Partnerships",
-    desc: "We work closely with leading, internationally accredited hospitals in Bangalore.",
+    desc: "We work closely with leading, internationally accredited hospitals in India.",
   },
   {
     icon: Globe2,
